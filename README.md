@@ -1,57 +1,74 @@
-# Cores
+# Design System
 
-## Tokens fixos
+## 1. Cores
 
--   primary
--   secondary
--   tertiary
--   basePrimary
--   baseSecondary
--   baseTertiary
--   systemError
--   systemSuccess
--   systemWarning
--   background
--   surface
-    > Cores base são as variações entre preto e branco (Exemplo: Primary=Branco, Seondary=Cinza, Tertiary=Preto).
+### Tokens Fixos
 
-## Variação de cores
+-   **primary**: Cor principal do sistema.
+-   **secondary**: Cor secundária, usada para complementos.
+-   **tertiary**: Terceira cor, geralmente para acentuar ou para destaques.
+-   **basePrimary, baseSecondary, baseTertiary**: Variações entre preto e branco.
 
-Light/Dark ou Escala de cores
+### Variações de Cores
 
-1. Light/Dark é uma forma mais simples e direta
-    - Ex: primaryLight, primaryDark
-2. Escala de cores dá mais opções porem mais trabalho no inicio para definir o design system
-    - Ex: primary10, primary20, primary30, ...
-    - Cor base é 50 e existem variações para mais e para menos.
-3. Prefixo **on** para cores que vão acima de outra
-    - ex: background > onBackground
-    - ex: primaryDark > onPrimaryDark
-4. É importante usar as cores para a sua função (não é algo obrigatório, mas é bom evitar criar exceções para manter a coesão no design) por exemplo usar o token background para o background e o surface para coisas que ficam na superfície do background.
+#### 1. Light/Dark
 
-# Tipografia
+-   **primaryLight**: Cor mais clara para temas claros.
+-   **primaryDark**: Cor mais escura para temas escuros.
+-   **secondaryLight**: Cor mais clara para temas claros.
+-   **secondaryDark**: Cor mais escura para temas escuros.
 
-## Tokens fixos
+#### 2. Escala de Cores
 
--   h1, h2, h3, h4 e h5
--   subtitle
--   body
--   button
--   label
--   ...
+-   **primary10, primary20, primary30, ...**: Variações de intensidade com base na cor primária, de 10 a 90.
+-   **secondary10, secondary20, secondary30, ...**: Variações de intensidade com base na cor secundária.
 
-> A ideia é cada style ter seu tamanho, height e peso. Serem reutilizados e sem ficar variando os valores anteriormente mencionados.
+#### 3. Prefixo "on" para cores sobre outras
 
-> O design pode precisar, de variações com font family diferente. Nesses casos vamos tratar com um estilo especial. Podemos dar um nome para ele que faça sentido com o seu uso, por exemplo: tvShowTitle, é um titulo com uma fonte especial utilizado apenas nos títulos de um programa na tela de programa.
+-   **onBackground**: Cor para texto ou elementos sobre o fundo.
+-   **onPrimaryDark**: Cor para texto ou elementos sobre um fundo primário escuro.
 
-## Variações
+#### 4. Cores de Função
 
-1. Vamos criar duas opções para variar o tamanho de um text style: large ou small. Large para uma versão maior do texto e small para uma versão menor.
-    - Ex: bodySmall, body e bodyLarge
-2. Usaremos o preso da fonte como sufixo para especificar o preso da fonte.
-    - bodyLarge, bodyLargeBold
+-   **systemError**: Usado para indicar erros.
+-   **systemSuccess**: Usado para indicar sucesso.
+-   **systemWarning**: Usado para indicar um alerta ou aviso.
+-   **background**: Cor do fundo.
+-   **surface**: Cor da superfície, usada para elementos acima do fundo.
 
-## Links úteis
+## 2. Tipografia
 
--   https://www.figma.com/design/pttxPv5STpQ8RT3ml5hwDa/Mobile-Design-System-Starter-2.0--Community-?node-id=1710-1325&p=f&t=xAuCHu7km14NQBxP-0
--   https://www.youtube.com/watch?v=HNJmWKndUA4
+### Tokens Fixos
+
+-   **h1**: Título principal, maior tamanho de fonte.
+-   **h2**: Subtítulo, secundário.
+-   **h3**: Título de seção, tamanho médio.
+-   **h4**: Subtítulo de seção, tamanho menor.
+-   **h5**: Subtítulo menor, utilizado em textos complementares.
+-   **subtitle**: Texto de legenda, geralmente usado para subtítulos ou descrições.
+-   **body**: Texto de corpo principal.
+-   **button**: Texto utilizado em botões.
+-   **label**: Texto utilizado em labels ou campos.
+
+### Variações
+
+#### 1. Tamanho de Texto
+
+-   **large**: Versão maior do texto.
+-   **small**: Versão menor do texto.
+
+#### 2. Peso de Fonte
+
+-   **bold**: Peso de fonte mais forte.
+-   **regular**: Peso de fonte normal.
+
+#### Exemplos:
+
+-   **bodyLarge**: Texto de corpo maior.
+-   **bodyLargeBold**: Texto de corpo maior em negrito.
+-   **subtitleSmall**: Subtítulo em tamanho menor.
+
+## Links Úteis
+
+-   [Figma - Design System](https://www.figma.com/design/pttxPv5STpQ8RT3ml5hwDa/Mobile-Design-System-Starter-2.0--Community-?node-id=1710-1325&p=f&t=xAuCHu7km14NQBxP-0)
+-   [YouTube - Tutorial](https://www.youtube.com/watch?v=HNJmWKndUA4)
